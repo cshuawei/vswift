@@ -1,8 +1,8 @@
 # vswift-cli
 
-该脚手架是基于nodejs编写，适用于快速创建统一标准的前端项目模板，目前支持创建管理端和移动端通用模板，管理端所用的基础UI库为 [Element Plus](https://element-plus.gitee.io/) ，移动端所用的基础UI库为 [Vant](https://vant-contrib.gitee.io/vant) 。
+The scaffolding is based on nodejs and is suitable for quickly creating unified standard front-end project templates. Currently, it supports the creation of general templates for management and mobile terminals. The basic UI library used by the management terminal is [Element Plus](https://element-plus.gitee.io/), and the basic UI library used by the mobile terminal is [Vant](https://vant-contrib.gitee.io/vant) 。
 
-## 安装
+## Install
 
 npm
 
@@ -10,21 +10,21 @@ npm
 npm install -g @vswfit/cli
 ```
 
-## 发布
+## Release
 
 ```shell
 npm run release or yarn release
 ```
 
-## 使用说明
+## Instructions for use
 
-1. 终端输入：
+1. Terminal input
 
 ```shell
 vswift create
 ```
 
-2. 根据提示输入并选择创建信息：
+2. Follow the prompts to enter and choose to create information
 
 ```shell
 ➜ vswift create
@@ -35,9 +35,9 @@ Cloning into 'project-demo'...
 Your project template has been created, see: ....../project-demo
 ```
 
-#### 选项说明
+#### Option description
 
-- ***Input your project name:*** 最终创建的项目名称
-- ***Choose a template:*** *vue-admin* 选项表示管理端模板，*vue-mobile* 选项表示移动端H5模板
-- ***Pull source:*** *Pull from local @vswift/cli service* 选项表示从安装到全局的como-cli服务中拉取模板，*Pull the latest from github* 选项表示直接从github上拉取最新的模板，但是可能存在破坏性或实验性的代码，拉取下来之后请及时删除或更新 .git 的远程链接，可执行终端命令：git remote set-url origin [git url]
+- ***Input your project name:*** The name of the final project created
+- ***Choose a template:*** *vue-admin* The option represents the management terminal template, *vue-mobile* The option represents the mobile terminal H5 template
+- ***Pull source:*** *Pull from local @vswift/cli service* The option means to pull the template from the @vswift/cli service installed globally, *Pull the latest from github* The option means to pull the latest template directly from github, But there may be destructive or experimental code, please delete or update the remote link of .git in time after pulling it down, Executable terminal commands: git remote set-url origin [git url]
 
