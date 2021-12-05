@@ -1,8 +1,8 @@
 {
   "name": "vswift-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "bin": {
-    "vswift": "./bin/cli.js"
+    "vst": "./bin/cli.js"
   },
   "scripts": {
     "release": "node scripts/release.js"
