@@ -33,7 +33,7 @@ inquirer.prompt([
     message: 'Pull source:',
     choices: [
       {
-        name: 'Pull from local como-cli service',
+        name: 'Pull from local vswift-cli service',
         value: 'cli'
       },
       {

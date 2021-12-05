@@ -35,7 +35,7 @@ inquirer.prompt([
   if (confirm) {
     exec(`yarn publish --tag ${tag} --new-version ${version}`, function (code) {
       if (code !== 0) throw new Error('Release failed')
-      console.log('Release success!!! See: https://www.npmjs.com/package/como-cli')
+      console.log('Release success!!! See: https://github.com/cshuawei/vswift-cli')
     })
   }
 }).catch(err => {
