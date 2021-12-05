@@ -7,7 +7,7 @@
   "scripts": {
     "release": "node scripts/release.js"
   },
-  "description": "Vue swiftly development scaffolding.",
+  "description": "Vue swift development scaffolding.",
   "author": "como",
   "repository": {
     "type": "git",
