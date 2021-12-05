@@ -1,0 +1,27 @@
+{
+  "name": "como-template",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "main": "./src/main.js",
+  "dependencies": {
+    "vant": "^3.2.8",
+    "vue": "^3.2.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^1.9.3",
+    "vite": "^2.6.4"
+  },
+  "description": "Universal mobile template for front-end development.",
+  "author": "como",
+  "keywords": [
+    "typescript",
+    "javascript",
+    "vant",
+    "mobile"
+  ],
+  "license": "MIT"
+}
