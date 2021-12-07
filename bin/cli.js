@@ -9,9 +9,17 @@ const [action] = argv
 
 if (action !== 'create') throw new Error(`Unsupported command parameters: ${action}`)
 
-const inquirer = require('inquirer')
-const shell = require('shelljs')
-const path = require('path')
+import ora from 'ora'
+import inquirer from 'inquirer'
+import shell from 'shelljs'
+import { join } from 'path'
+import { fileURLToPath } from 'url'
+
+const dirname = fileURLToPath(import.meta.url)
+
+Object.defineProperty(global, '__dirname', {
+  value: dirname
+})
 
 inquirer.prompt([
   {
@@ -46,15 +54,22 @@ inquirer.prompt([
 ]).then(answers => {
   const { name, template, source } = answers
   const { cp, exec } = shell
-  const dest = path.join(process.cwd(), `/${name}`)
+  const dest = join(process.cwd(), `/${name}`)
+  const spinner = ora('Please wait...').start()
   if (source === 'cli') {
-    const source = path.join(__dirname, `/template/${template}/`)
+    const source = join(__dirname, '../../', `/template/${template}/`)
     cp('-r', source, dest)
-    console.log(`Your project template has been created, see: ${dest}`)
+    spinner.succeed(`Your project template has been created, see: ${dest}`)
+    // console.log(`Your project template has been created, see: ${dest}`)
   } else {
     exec(`git clone -b master https://github.com/cshuawei/${template}-template.git ${name}`, function (code) {
-      if (code !== 0) throw new Error('Pull failed, please check if your network is working properly.')
-      console.log(`Your project template has been created, see: ${dest}`)
+      if (code !== 0) {
+        spinner.fail(`Pull failed, please check if your network is working properly.`)
+        return
+      }
+      // throw new Error('Pull failed, please check if your network is working properly.')
+      spinner.succeed(`Your project template has been created, see: ${dest}`)
+      // console.log(`Your project template has been created, see: ${dest}`)
     })
   }
 }).catch(err => {

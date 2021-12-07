@@ -4,6 +4,7 @@
   "bin": {
     "vst": "./bin/cli.js"
   },
+  "type": "module",
   "scripts": {
     "release": "node scripts/release.js"
   },
@@ -16,6 +17,8 @@
   "license": "MIT",
   "dependencies": {
     "inquirer": "^8.2.0",
-    "shelljs": "^0.8.4"
+    "ora": "^6.0.1",
+    "shelljs": "^0.8.4",
+    "url": "^0.11.0"
   }
 }
