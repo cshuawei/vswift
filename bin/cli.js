@@ -41,13 +41,13 @@ inquirer.prompt([
     message: 'Pull source:',
     choices: [
       {
+        name: 'Pull the latest from github',
+        value: 'github'
+      },
+      {
         name: 'Pull from local vswift-cli service',
         value: 'cli'
       },
-      {
-        name: 'Pull the latest from github',
-        value: 'github'
-      }
     ],
     default: 0
   },
