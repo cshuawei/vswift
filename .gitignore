@@ -3,3 +3,6 @@ node_modules
 dist
 dist-ssr
 *.local
+
+# lock file
+package-lock.json
