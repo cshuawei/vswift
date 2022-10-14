@@ -2,7 +2,7 @@
 
 The scaffolding is based on nodejs and is suitable for quickly creating unified standard front-end project templates. Currently, it supports the creation of general templates for management and mobile terminals. The basic UI library used by the management terminal is [Element Plus](https://element-plus.gitee.io/), and the basic UI library used by the mobile terminal is [Vant](https://vant-contrib.gitee.io/vant) 。
 
-## Install test
+## Install
 
 npm
 
