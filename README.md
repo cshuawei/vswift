@@ -41,3 +41,4 @@ Your project template has been created, see: ....../project-demo
 - ***Choose a template:*** *vue-admin* The option represents the management terminal template, *vue-mobile* The option represents the mobile terminal H5 template
 - ***Pull source:*** *Pull from local vswift-cli service* The option means to pull the template from the vswift-cli service installed globally, *Pull the latest from github* The option means to pull the latest template directly from github, But there may be destructive or experimental code, please delete or update the remote link of .git in time after pulling it down, Executable terminal commands: git remote set-url origin [git url]
 
+test///
